@@ -1,3 +1,6 @@
+
+Important note: Secret key of Unsplash is not present in the public github repository, Utils > Constants.SERVER_SECRET. Replace it with your key. 
+
 # Unsplash_Gallery
 Unsplash Gallery for a coding challange.
 
