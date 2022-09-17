@@ -12,7 +12,7 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 class PhotosViewModel @Inject constructor(private val repository: AppRepository) : ViewModel() {
-    private var hasNext: Boolean = true
+    private var hasNext: Boolean = false
 
 
     private val _items: MutableLiveData<

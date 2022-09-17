@@ -22,7 +22,7 @@
         android:clickable="true"
         android:elevation="10dp"
         android:gravity="center"
-        android:visibility="visible">
+        android:visibility="gone">
 
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
