@@ -62,7 +62,7 @@ class PhotosFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        loadData(page)
+//        loadData(page)
         observers()
         listeners()
 
@@ -104,6 +104,9 @@ class PhotosFragment : Fragment() {
                     list = it
                     adapter!!.notifyItemRangeChanged((page - 1) * 10, page * 10)
                 }
+            }
+            else{
+                viewModel.getPhotos(1)
             }
         }
 

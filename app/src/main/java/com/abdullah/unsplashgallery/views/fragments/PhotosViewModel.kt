@@ -27,6 +27,7 @@ class PhotosViewModel @Inject constructor(private val repository: AppRepository)
 
     //----------------------------------------------//
 
+
     private val _eventShowMessage: MutableLiveData<String?> by lazy {
         MutableLiveData<String?>()
     }
@@ -44,6 +45,11 @@ class PhotosViewModel @Inject constructor(private val repository: AppRepository)
         get() = _eventShowLoading
 
     //----------------------------------------------//
+
+
+    init {
+        getPhotos(1)
+    }
 
     fun getPhotos(page: Int) = viewModelScope.launch {
 
