@@ -105,9 +105,6 @@ class PhotosFragment : Fragment() {
                     adapter!!.notifyItemRangeChanged((page - 1) * 10, page * 10)
                 }
             }
-            else{
-                viewModel.getPhotos(1)
-            }
         }
 
         viewModel.eventShowMessage.observe(viewLifecycleOwner) {
